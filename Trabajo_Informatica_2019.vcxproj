@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F69344A-8CC8-4C6E-924D-1008AF2B3095}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Trabajo_Informatica_2019</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\bin</OutDir>
+    <IntDir>temp\$(Configuration)\</IntDir>
+    <IncludePath>C:\Users\otaku\Documents\AdriMEGA\Trabajo_Informatica_2019\lib;C:\Users\Alejandro\Documents\Universidad\Informática Industrial\Trabajo_Informatica_2019_v3\Trabajo_Informatica_2019\lib;C:\Users\petra\Desktop\Trabajo_Informatica_2019\lib;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\otaku\Documents\AdriMEGA\Trabajo_Informatica_2019\lib;C:\Users\Alejandro\Documents\Universidad\Informática Industrial\Trabajo_Informatica_2019_v3\Trabajo_Informatica_2019\lib;C:\Users\petra\Desktop\Trabajo_Informatica_2019\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>C:\Users\otaku\Documents\AdriMEGA\Trabajo_Informatica_2019\bin;C:\Users\Alejandro\Documents\Universidad\Informática Industrial\Trabajo_Informatica_2019_v3\Trabajo_Informatica_2019\bin;C:\Users\petra\Desktop\Trabajo_Informatica_2019\bin\images;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Cazador.cpp" />
+    <ClCompile Include="src\Coordinador.cpp" />
+    <ClCompile Include="src\Disparo.cpp" />
+    <ClCompile Include="src\Frontera.cpp" />
+    <ClCompile Include="src\Gallina1.cpp" />
+    <ClCompile Include="src\Gallina2.cpp" />
+    <ClCompile Include="src\Gallina3.cpp" />
+    <ClCompile Include="src\Interaccion.cpp" />
+    <ClCompile Include="src\Limite.cpp" />
+    <ClCompile Include="src\ListaDisparo.cpp" />
+    <ClCompile Include="src\Mundo.cpp" />
+    <ClCompile Include="src\principal.cpp" />
+    <ClCompile Include="src\Vector2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Cazador.h" />
+    <ClInclude Include="src\Coordinador.h" />
+    <ClInclude Include="src\Disparo.h" />
+    <ClInclude Include="src\Frontera.h" />
+    <ClInclude Include="src\Gallina1.h" />
+    <ClInclude Include="src\Gallina2.h" />
+    <ClInclude Include="src\Gallina3.h" />
+    <ClInclude Include="src\Interaccion.h" />
+    <ClInclude Include="src\Limite.h" />
+    <ClInclude Include="src\ListaDisparo.h" />
+    <ClInclude Include="src\Mundo.h" />
+    <ClInclude Include="src\Vector2D.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
